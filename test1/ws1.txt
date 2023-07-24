@@ -1,0 +1,5 @@
+What is the purpose of the log message you supply to your git commit?
+- The log message supplied to a Git commit serves a crucial purpose in version control. When you make changes to files in a Git repository and are ready to save those changes permanently, you create a commit. Each commit represents a snapshot of the project at a specific point in time. The commit log message is a concise description of the changes made in that particular commit.
+What do you think makes a good commit message?
+When and how often should I be committing my work?
+True or False, you should commit all files (including binaries, images, and log files) to Git.
