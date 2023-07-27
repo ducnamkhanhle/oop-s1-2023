@@ -1,5 +1,4 @@
 #include <iostream>
-#include "function-1-5.cpp"
 // #define ll long long
 using namespace std;
 // const ll maxN = 1005;    

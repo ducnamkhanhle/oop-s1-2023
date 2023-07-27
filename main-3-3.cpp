@@ -1,6 +1,6 @@
 #include <iostream>
 #include <algorithm>
-#include "function-3-3.cpp"
+
 // #define ll long long
 using namespace std;
 // const ll maxN = 1005;    

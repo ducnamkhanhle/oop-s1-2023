@@ -1,6 +1,7 @@
 #include <algorithm>
 #include <limits.h>
 #include <map>
+#include <iostream>
 using namespace std;
 
 void print_pass_fail(char grade){
