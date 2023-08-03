@@ -16,7 +16,7 @@ void print_binary_str(string decimal_number){
         res = res * 10 + (sum % 10);
         sum /= 10;
     }
-    cout << sum << endl;
+    cout << res << endl;
 }
 
 
