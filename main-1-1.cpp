@@ -18,6 +18,6 @@ int main(){
   //   }
   //   cout << endl;
   // }
-   cout << "The answer is: " << sum_diagonal() << endl;
+   cout << "The answer is: " << sum_diagonal(a) << endl;
     return 0;
 }

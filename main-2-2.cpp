@@ -9,5 +9,5 @@ int main(){
 
     ll a[9] = {1, 0, 1, 1, 0, 1, 1, 1, 0};
 
-    cout << binary_to_int(a);
+    cout << binary_to_int(a, 9);
 }
