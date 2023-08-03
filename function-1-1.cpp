@@ -2,10 +2,10 @@
 #include<cmath>
 #define ll int
 
-int sum_diagonal(int array[][4]){
+int sum_diagonal(int array[4][4]){
     ll sum = 0; 
     for (ll i = 0; i < 4; i++){
         sum += array[i][i];
     }
-    return 0;
+    return sum;
 }
