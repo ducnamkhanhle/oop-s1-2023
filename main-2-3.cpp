@@ -9,5 +9,5 @@ int main(){
 
     ll a[9] = {1, 0, 1, 1, 0, 1, 1, 1, 0};
 
-    cout << sum_array_elements(a);
+    cout << sum_array_elements(a, 9);
 }

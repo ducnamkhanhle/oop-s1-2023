@@ -9,5 +9,5 @@ int main(){
 
     ll a[9] = {1, 0, 1, 1, 0, 1, 1, 1, 0};
 
-    cout << sum_min_max(a);
+    cout << sum_min_max(a, 9);
 }
