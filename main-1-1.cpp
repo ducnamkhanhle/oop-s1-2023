@@ -2,7 +2,7 @@
 #define ll int
 using namespace std;
 
-extern void count_digits(int array[4][4]);
+extern int sum_diagonal(int array[4][4]);
 
 int main(){
   ios_base::sync_with_stdio(0), cout.tie(0);

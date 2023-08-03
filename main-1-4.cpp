@@ -6,11 +6,10 @@ extern void print_scaled(int array[3][3],int scale);
 
 int main(){
   ios_base::sync_with_stdio(0), cout.tie(0);
-  ll a[4][4] = {
-    {1, 2, 4, 5},
-    {6, 1, 2, 4},
-    {3, 4, 1, 2},
-    {3, 2, 1, 5}
+  ll a[3][3] = {
+    {1, 2, 4},
+    {6, 1, 2},
+    {3, 4, 1},
   };
   ll scale = 3;
   // for (ll i = 0; i <= 3; i++){

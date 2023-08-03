@@ -2,6 +2,7 @@
 #include<string>
 #include<cmath>
 #define ll int
+using namespace std;
 
 void print_binary_str(string decimal_number){
     ll s = stoi(decimal_number), sum = 0;

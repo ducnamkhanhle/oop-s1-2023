@@ -2,7 +2,9 @@
 #include<string>
 #include<cmath>
 #include<limits.h>
+#include<algorithm>
 #define ll int
+using namespace std;
 
 int array_min(int integers[], int length){
     int MIN = INT_MAX;
