@@ -24,8 +24,8 @@ double* dynamicArray(int N, int M){
     return arr;
 }
 
-int arrayMax(double* arr, int N){
-    int Max = 0;
+double arrayMax(double* arr, int N){
+    double Max = 0;
     for (ll i = 0; i < N; i++){
         if (Max <= arr[i]) Max = arr[i];
     }
