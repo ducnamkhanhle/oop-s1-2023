@@ -13,7 +13,7 @@ int sum_integers(int integers[], int length){
 
 bool is_array_palindrome(int integers[], int length){
     for (ll i = 0; i <= (length - 1) / 2; i++){
-        cout << i << " " << length - i - 1 << endl;
+     //   cout << i << " " << length - i - 1 << endl;
         if (integers[i] != integers[length - i - 1]) return false;
     }
     return true;
