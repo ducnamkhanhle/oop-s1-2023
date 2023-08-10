@@ -2,7 +2,7 @@
 #define ll int
 using namespace std;
 
-extern void print_matrix(int array[10][10]);
+extern void print_matrix(int [10][10]);
 
 int main(){
     ios_base::sync_with_stdio(0);
