@@ -1,9 +1,8 @@
 #include<iostream>
-#include "function-2-3.cpp"
 #define ll int
 using namespace std;
 
-//extern int bin_to_int(int binary_digits[], int number_of_digits);
+extern int palindrome_sum(int integers[], int length);
 
 int main(){
     ios_base::sync_with_stdio(0);

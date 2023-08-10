@@ -1,9 +1,8 @@
 #include<iostream>
-#include "function-1-1.cpp"
 #define ll int
 using namespace std;
 
-//extern int bin_to_int(int binary_digits[], int number_of_digits);
+extern void print_matrix(int array[10][10]);
 
 int main(){
     ios_base::sync_with_stdio(0);
