@@ -12,18 +12,23 @@ int *readNumbers(){
 }
 
 int secondSmallestSum(int *a,int length){
-    int *b = new int[40];
+    int b[10000];
     int it = 0;
 
     for (ll i = 0; i < length; i++){
         ll sum = 0;
         for (ll j = i; j < length; j++){
             sum += a[j];
+        //    cout << j << endl;
             b[it++] = sum;
         }
     }
 
-    sort(b, b + length);
+    // for (ll i = 0; i < length; i++){
+    //     cout << b[i] << " ";
+    // }
+
+    sort(b, b + it);
     return b[1];
 }
 
