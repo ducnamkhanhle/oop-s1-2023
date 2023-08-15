@@ -32,3 +32,4 @@ void printNumbers(int* array,int length){
         cout << i << " "  << array[i] << endl;
     }
 }
+
