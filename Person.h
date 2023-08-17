@@ -1,7 +1,8 @@
+#include<string>
 using namespace std;
 
 struct Person {
-    string name;
+    std::string name;
     int age;
 };
 
