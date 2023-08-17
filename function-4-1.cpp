@@ -19,7 +19,7 @@ int secondSmallestSum(int *a,int length){
         ll sum = 0;
         for (ll j = i; j < length; j++){
             sum += a[j];
-        //    cout << j << endl;
+        //b cdmlthy    cout << j << endl;
             b[it++] = sum;
         }
     }
