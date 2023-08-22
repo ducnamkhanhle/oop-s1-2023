@@ -47,9 +47,8 @@ bool Orchestra::has_instrument(string _instrument){
 }
 
 Musician* Orchestra::get_members(){
-    for (ll i = 0; i < size; i++){
-        cout << list_musiscian[i].get_instrument() << " " << list_musiscian[i].get_experience() << endl;
-    }
+    Musician* p = list_musiscian;
+    return p;
 }
 
 bool Orchestra::add_musician(Musician new_musician){
@@ -66,3 +65,4 @@ bool Orchestra::add_musician(Musician new_musician){
 Orchestra::~Orchestra(){
     delete [] list_musiscian;
 }
+
