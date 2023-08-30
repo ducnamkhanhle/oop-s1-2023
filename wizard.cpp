@@ -8,8 +8,7 @@ Wizard::Wizard(string _name, int _health, int _damage, int _mana): Player(_name,
 Wizard::Wizard(): Wizard("", 0,0,0){}
 
 void Wizard::castSpell(Player* opponent){
-    Player::attack(opponent, this->mana);
-
     cout << this->name << " casts a spell on " << opponent->getName() << " for " << this->damage << " damage" << endl;
+    Player::attack(opponent, this->mana);
 }
 

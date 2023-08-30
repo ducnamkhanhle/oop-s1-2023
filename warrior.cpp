@@ -8,7 +8,6 @@ Warrior::Warrior(string _name, int _health, int _damage, string _weapon) : Playe
 Warrior::Warrior(): Warrior("", 0,0,""){}
 
 void Warrior::swingWeapon(Player* opponent){
-    Player::attack(opponent, damage);
-
     cout << name << " swing their " << weapon << " at " << opponent->getName() << endl;
+    Player::attack(opponent, damage);
 }
