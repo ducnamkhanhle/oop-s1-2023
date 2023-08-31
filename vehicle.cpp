@@ -18,3 +18,4 @@ int Vehicle::getParkingDuration(){
 Vehicle::~Vehicle()
 {
 }
+
