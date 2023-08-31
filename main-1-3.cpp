@@ -1,10 +1,10 @@
 #include<iostream>
 #include<ctime>
-#include "vehicle.h"
-#include "car.h"
-#include "bus.h"
-#include "motorbike.h"
-#include "parkinglot.h"
+#include "Vehicle.h"
+#include "Car.h"
+#include "Bus.h"
+#include "Motorbike.h"
+#include "ParkingLot.h"
 #define ll int
 
 using namespace std;

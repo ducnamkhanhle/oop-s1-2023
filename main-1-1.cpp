@@ -1,9 +1,9 @@
 #include<iostream>
 #include<ctime>
-#include "vehicle.h"
-#include "car.h"
-#include "bus.h"
-#include "motorbike.h"
+#include "Vehicle.h"
+#include "Car.h"
+#include "Bus.h"
+#include "Motorbike.h"
 #define ll int
 
 using namespace std;

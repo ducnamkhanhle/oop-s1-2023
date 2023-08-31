@@ -1,4 +1,4 @@
-#include "parkinglot.h"
+#include "ParkingLot.h"
 #include <iostream>
 #include <ctime>
 using namespace std;

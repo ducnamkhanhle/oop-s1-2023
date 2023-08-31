@@ -1,4 +1,4 @@
-#include "bus.h"
+#include "Bus.h"
 #include <iostream>
 #include <ctime>
 using namespace std;
