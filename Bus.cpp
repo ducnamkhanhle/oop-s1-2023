@@ -13,8 +13,8 @@ Bus::Bus() : Bus(0){
 }
 
 int Bus::getParkingDuration(){
-    //int tmp = difftime(timeOfEntry, time(0));
-    return difftime(time(0), timeOfEntry);  
+    int tmp = difftime(timeOfEntry, time(0));
+    return tmp - (25 * tmp)/100; 
 
 }
 
