@@ -13,7 +13,7 @@ Car::Car() : Car(0){
 }
 
 int Car::getParkingDuration(){
-   int tmp = difftime(timeOfEntry, time(0));
+   int tmp = difftime(time(0), timeOfEntry);
     return tmp - (10 * tmp)/100; 
 }
 
