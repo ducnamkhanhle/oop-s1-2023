@@ -23,7 +23,7 @@ void ParkingLot::parkVehicle(Vehicle* _vehicle){
         curr_capacity++;
     }
     else {
-        cout << "The Lot is full" << endl;
+        cout << "The lot is full" << endl;
     }
 
 }
@@ -43,7 +43,7 @@ void ParkingLot::unparkVehicle(int _ID){
     cout << "Vehicle Not in the lot" << endl;
 }
 
-int ParkingLot::countOverstaytingVehicles(int maxParkingDuration){
+int ParkingLot::countOverstayingVehicles(int maxParkingDuration){
     int cnt = 0;
     for (int i = 0; i < curr_capacity; i++){
         

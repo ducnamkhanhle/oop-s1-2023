@@ -17,7 +17,6 @@ int main(){
     for (ll i = 1; i <= 11; i++){
         Car* b = new Car(i);
         a.parkVehicle(b);
-        delete b;
     }
 
     
