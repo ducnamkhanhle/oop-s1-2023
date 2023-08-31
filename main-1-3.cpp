@@ -31,7 +31,7 @@ int main(){
     }
     Motorbike* b = new Motorbike(12);
     
-    cout << a.countOverstaytingVehicles(15) << endl;
+    cout << a.countOverstayingVehicles(15) << endl;
 
     a.unparkVehicle(5);
     a.unparkVehicle(11);
