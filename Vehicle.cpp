@@ -8,7 +8,9 @@ using namespace std;
 Vehicle::Vehicle(int _ID): ID(_ID){
     timeOfEntry = time(0);
 }
-Vehicle::Vehicle() : Vehicle(0){}
+Vehicle::Vehicle() : Vehicle(0){
+    timeOfEntry = time(0);
+}
 
 int Vehicle::getID(){
     return ID; 
