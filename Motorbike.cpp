@@ -13,8 +13,8 @@ Motorbike::Motorbike() : Motorbike(0){
 }
 
 int Motorbike::getParkingDuration(){
-    int tmp = difftime(time(0), timeOfEntry);
-    return tmp - (15 * tmp)/100; 
+    int tmp = difftime(time(0), timeOfEntry - timeOfEntry * 15 / 100);
+    return tmp; 
 }
 
 Motorbike::~Motorbike()
