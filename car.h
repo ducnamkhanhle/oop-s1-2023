@@ -11,7 +11,7 @@ class Car : public Vehicle
         
     public:
         Car();
-        Car(time_t _timeOfEntry, int _ID, int _parkingDuration);
+        Car(int _ID);
         int getParkingDuration();
         ~Car();
 };

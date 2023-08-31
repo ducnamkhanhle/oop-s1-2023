@@ -5,8 +5,10 @@ using namespace std;
 
 
 
-Vehicle::Vehicle(time_t _timeOfEntry, int _ID): ID(_ID), timeOfEntry(_timeOfEntry){}
-Vehicle::Vehicle() : Vehicle(time(NULL), 0){}
+Vehicle::Vehicle(int _ID): ID(_ID){
+    timeOfEntry = time(0);
+}
+Vehicle::Vehicle() : Vehicle(0){}
 
 int Vehicle::getID(){
     return ID; 

@@ -11,7 +11,7 @@ class Motorbike : public Vehicle
         
     public:
         Motorbike();
-        Motorbike(time_t _timeOfEntry, int _ID, int _parkingDuration);
+        Motorbike(int _ID);
         int getParkingDuration();
         ~Motorbike();
 };

@@ -15,21 +15,21 @@ int main(){
 
 
     for (ll i = 1; i <= 5; i++){
-        Car* b = new Car(time(0), i, 7);
+        Car* b = new Car(i);
         a.parkVehicle(b);
     }
 
     for (ll i = 1; i <= 3; i++){
-        Bus* b = new Bus(time(0), i, 40);
+        Bus* b = new Bus(i);
     //    cout << b->getParkingDuration() << endl;
         a.parkVehicle(b);
     }
 
     for (ll i = 1; i <= 2; i++){
-        Motorbike* b = new Motorbike(time(0), i, 5);
+        Motorbike* b = new Motorbike(i);
         a.parkVehicle(b);
     }
-    Motorbike* b = new Motorbike(time(0), 11, 18);
+    Motorbike* b = new Motorbike(12);
     
     cout << a.countOverstaytingVehicles(15) << endl;
 

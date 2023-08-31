@@ -5,11 +5,14 @@ using namespace std;
 
 
 
-Bus::Bus(time_t _timeOfEntry,int _ID, int _parkingDuration): Vehicle(_timeOfEntry, _ID), parkingDuration(_parkingDuration){}
-Bus::Bus() : Bus(time(NULL),0, 0){}
+Bus::Bus(int _ID): Vehicle(_ID){
+    parkingDuration = time(0);
+}
+Bus::Bus() : Bus(0){}
 
 int Bus::getParkingDuration(){
-    return this->parkingDuration - ((25 * this->parkingDuration) / 100); 
+    int tmp = timeOfEntry;
+    return tmp - ((25 * tmp) / 100); 
 }
 
 Bus::~Bus()

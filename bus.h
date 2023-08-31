@@ -11,7 +11,7 @@ class Bus : public Vehicle
         
     public:
         Bus();
-        Bus(time_t _timeOfEntry, int _ID, int _parkingDuration);
+        Bus(int _ID);
         int getParkingDuration();
         ~Bus();
 };

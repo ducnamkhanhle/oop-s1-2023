@@ -11,7 +11,7 @@ class Vehicle
         
     public:
         Vehicle();
-        Vehicle(time_t _timeOfEntry, int ID);
+        Vehicle(int ID);
         int getID();
         virtual int getParkingDuration();
         virtual ~Vehicle();

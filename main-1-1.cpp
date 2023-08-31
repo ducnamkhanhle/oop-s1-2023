@@ -13,13 +13,9 @@ int main(){
 
     Vehicle* arr[4];
 
-    
-    
-    
-
-    arr[0] = new Car(time(0), 1, 150);
-    arr[1] = new Bus(time(0), 2, 170);
-    arr[2] = new Motorbike(time(0), 3, 180);
+    arr[0] = new Car(1);
+    arr[1] = new Bus(2);
+    arr[2] = new Motorbike(3);
 
     for (ll i = 0; i < 3; i++){
         cout << arr[i]->getParkingDuration() << endl;
