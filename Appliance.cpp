@@ -2,9 +2,9 @@
 #include<iostream>
 using namespace std;
 
-Appliance::Appliance(int powerRating) : _powerRating(powerRating), _isOn(true) {}
+Appliance::Appliance(int powerRating) : _powerRating(powerRating), _isOn(false) {}
 
-Appliance::Appliance() : _powerRating(0), _isOn(false){}
+Appliance::Appliance() : Appliance(0){}
 
 void Appliance::turnOff(){
     this->_isOn = false;
@@ -24,12 +24,10 @@ void Appliance::set_isOn(bool isOn){
     this->_isOn = isOn;
 }
 bool Appliance::get_isOn(){
-    return this->_powerRating;
+    return this->_isOn;
 }
 
-double Appliance::getPowerConsumption(){
-    return 0;
-}
+double Appliance::getPowerConsumption(){}
 
 
 
