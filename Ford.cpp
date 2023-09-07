@@ -34,7 +34,7 @@ void Ford::drive(int kms){
     if (curr_fuel <= 0) _litresOfFuel = 0;
     else{ 
         _litresOfFuel = curr_fuel;
-        _emission += 234 * kms;
+        _emissions += 234 * kms;
     } 
 
     
