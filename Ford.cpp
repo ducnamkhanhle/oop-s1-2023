@@ -3,7 +3,7 @@
 #include <iostream>
 using namespace std;
 
-Ford::Ford(int badgeNumber, int price) : Car(price), _badgeNumber(badgeNumber) {}
+Ford::Ford(int badgeNumber, int price) : Car(price), _badgeNumber(badgeNumber), _litresOfFuel(60) {}
 Ford::Ford() : Ford(0,0) {}
 
 

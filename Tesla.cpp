@@ -3,7 +3,7 @@
 #include <iostream>
 using namespace std;
 
-Tesla::Tesla(char model, int price) : Car(price), _model(model) {}
+Tesla::Tesla(char model, int price) : Car(price), _model(model), _batteryPercentage(100){}
 Tesla::Tesla() : Tesla(' ',0) {}
 
 

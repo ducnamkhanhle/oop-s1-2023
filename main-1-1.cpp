@@ -7,5 +7,5 @@ int main(){
 
     ca.drive(20);
 
-    cout << ca.get_price() << " " << ca.get_emission() << endl;
+    cout << ca.get_price() << " " << ca.get_emissions() << endl;
 }

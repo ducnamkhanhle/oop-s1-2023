@@ -10,9 +10,9 @@ int main(){
 
     tl.drive(20);
 
-    cout << tl.get_emission() << endl;
+    cout << tl.get_emissions() << endl;
 
     tl.drive(50);
     
-    cout << tl.get_emission() << endl;
+    cout << tl.get_emissions() << endl;
 }
