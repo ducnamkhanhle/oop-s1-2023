@@ -15,7 +15,7 @@ class Ford : public Car{
 
         void set_badgeNumber(int badgeNumber);
         void set_litresOfFuel(float litresOfFuel);
-        char get_badgeNumber();
+        int get_badgeNumber();
         float get_litresOfFuel();
 
         void refuel(int litres);

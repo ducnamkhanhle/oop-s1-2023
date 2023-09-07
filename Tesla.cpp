@@ -32,7 +32,7 @@ void Tesla::chargeBattery(int mins){
 }
 
 void Tesla::drive(int kms){
-    float curr_battery = _batteryPercentage - (kms / 5);
+    float curr_battery = _batteryPercentage - ((float)kms * 0.2);
     if (curr_battery <= 0) _batteryPercentage = 0;
     else{ 
         _batteryPercentage = curr_battery;

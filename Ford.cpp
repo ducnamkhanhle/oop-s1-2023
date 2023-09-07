@@ -15,7 +15,7 @@ void Ford::set_litresOfFuel(float litresOfFuel){
     _litresOfFuel = litresOfFuel;
 }
 
-char Ford::get_badgeNumber(){
+int Ford::get_badgeNumber(){
     return _badgeNumber;
 }
 
@@ -30,7 +30,7 @@ void Ford::refuel(int litres){
 }
 
 void Ford::drive(int kms){
-    float curr_fuel = _litresOfFuel - (kms / 5);
+    float curr_fuel = _litresOfFuel - ((float)kms * 0.2);
     if (curr_fuel <= 0) _litresOfFuel = 0;
     else{ 
         _litresOfFuel = curr_fuel;

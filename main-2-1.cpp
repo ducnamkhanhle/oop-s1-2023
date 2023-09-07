@@ -5,14 +5,12 @@ using namespace std;
 
 int main(){
     Tesla tl = Tesla('K',15);
-    tl.set_batteryPercentage(40);
-    tl.chargeBattery(30);
 
-    tl.drive(20);
+    tl.drive(151);
 
     cout << tl.get_emissions() << endl;
 
-    tl.drive(50);
+    tl.chargeBattery(10);
     
-    cout << tl.get_emissions() << endl;
+    cout << tl.get_batteryPercentage() << endl;
 }
