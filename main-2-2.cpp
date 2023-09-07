@@ -10,9 +10,9 @@ int main(){
 
     fd.drive(20);
 
-    cout << fd.get_emission() << endl;
+    cout << fd.get_emissions() << endl;
 
     fd.drive(50);
     
-    cout << fd.get_emission() << endl;
+    cout << fd.get_emissions() << endl;
 }
