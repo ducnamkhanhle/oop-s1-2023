@@ -2,6 +2,7 @@
 #define UTILS
 
 #include<tuple>
+#include<math.h>
 using namespace std;
 typedef tuple<int, int> tu_int;
 
