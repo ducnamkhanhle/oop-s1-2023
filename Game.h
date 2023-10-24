@@ -55,9 +55,9 @@ class Game {
                 for (int i = 0; i < entities.size(); i++){
                     if (entities[i]->getType() == 'M'){
                         Mine* mine = dynamic_cast<Mine*>(entities[i]);
-                        for (int i = 0; i < entities.size();i++){
-                            if (entities[i]->getType() == 'S'){
-                                Ship* ship = dynamic_cast<Ship*>(entities[i]);
+                        for (int j = 0; j < entities.size(); j++){
+                            if (entities[j]->getType() == 'S'){
+                                Ship* ship = dynamic_cast<Ship*>(entities[j]);
                                 double dis = Utils::calculateDistance(ship->getPos(), mine->getPos());
                                 if (dis <= mineDistanceThreshold){
                                     (mine->explode()).apply(*ship);
