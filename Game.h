@@ -60,8 +60,7 @@ class Game {
                                 Ship* ship = dynamic_cast<Ship*>(entities[i]);
                                 double dis = Utils::calculateDistance(ship->getPos(), mine->getPos());
                                 if (dis <= mineDistanceThreshold){
-                                    Explosion ex = mine->explode();
-                                    ex.apply(*ship);
+                                    (mine->explode()).apply(*ship);
                                 }
                             }      
                         }
