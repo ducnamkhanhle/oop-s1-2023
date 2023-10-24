@@ -1,0 +1,13 @@
+{
+    "files.associations": {
+        "tuple": "cpp",
+        "istream": "cpp",
+        "memory": "cpp",
+        "type_traits": "cpp",
+        "utility": "cpp",
+        "xlocnum": "cpp",
+        "xutility": "cpp",
+        "iostream": "cpp",
+        "vector": "cpp"
+    }
+}
