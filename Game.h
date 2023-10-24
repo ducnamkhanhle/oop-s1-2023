@@ -51,7 +51,7 @@ class Game {
                         curr_ship++;
                     }                
                 }
-                if (curr_ship != 0) break;
+                if (curr_ship == 0) break;
                 for (int i = 0; i < entities.size(); i++){
                     if (entities[i]->getType() == 'M'){
                         Mine* mine = dynamic_cast<Mine*>(entities[i]);
