@@ -12,7 +12,6 @@ class Game {
     private:
         vector<GameEntity*> entities;
     public:
-        Game();
         vector<GameEntity*> get_entities(){
             return entities;
         }
