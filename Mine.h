@@ -6,9 +6,12 @@
 
 class Mine : public GameEntity{
     public:
-        Mine(int x, int y);
-        Explosion explode();
-        
+        Mine(int x, int y): GameEntity(x, y, 'M') {}
+        Explosion explode(){
+            _type = 'X';
+            return Explosion(get<0>(position), get<1>(position));
+        }
+
 };
 
 #endif 
