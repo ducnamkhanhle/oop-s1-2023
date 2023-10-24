@@ -13,6 +13,12 @@ class Game {
         vector<GameEntity*> entities;
     public:
         Game();
+        vector<GameEntity*> get_entities(){
+            return entities;
+        }
+        void set_entities(vector<GameEntity*> _entities){
+            entities = _entities;
+        }
         vector<GameEntity*> initGame(int numShips, int numMines, int gridWidth, int gridHeight){
             for (int i = 0; i < numShips; i++){
                 tu_int pos = Utils::generateRandomPos(gridWidth, gridHeight);
@@ -64,6 +70,7 @@ class Game {
                 }
             }
         }
+
 };
 
 #endif
