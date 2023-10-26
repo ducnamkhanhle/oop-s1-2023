@@ -23,7 +23,7 @@ class Obstacle : public GridUnit, public Modifier{
 
         void apply(GridUnit& unit){
             unit.setEntity('O');
-            unit.setCoordinates(-1, -1);
+            //unit.setCoordinates(-1, -1);
             active = false;
         }
 

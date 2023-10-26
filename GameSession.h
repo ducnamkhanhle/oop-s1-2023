@@ -41,8 +41,7 @@ class GameSession{
         void gameCycle(int maxCycles, double obstacleActivationDistance){
             int curr_cycle = 0, num_avatar = 0;
 
-            while (curr_cycle < maxCycles){
-                num_avatar = 0;
+            while (curr_cycle < maxCycles){ 
                 for (int i = 0; i < grid.size(); i++){
                     if (grid[i]->getEntity() == 'A'){
                         Avatar *avatar = dynamic_cast<Avatar*>(grid[i]);
@@ -56,18 +55,15 @@ class GameSession{
                 }
 
                 for(int i = 0; i < grid.size(); i++){
-                    if (grid[i]->getEntity() == 'O'){
-                        Obstacle *obs = dynamic_cast<Obstacle*>(grid[i]);
-
-                        if (obs->isActive() == true) {
-                            for (int j = 0; j < grid.size(); j++){
-                                if (grid[j]->getEntity() == 'A'){
-                                    Avatar *avatar = dynamic_cast<Avatar*>(grid[j]);    
-                                    int dis = Helper::calculateDistance(avatar->getCoordinates(), obs->getCoordinates());
-
-                                    if (dis <= obstacleActivationDistance){
-                                        obs->apply(*avatar);
-                                    }
+                    if (grid[i]->getEntity() == 'A'){
+                        Avatar *avatar = dynamic_cast<Avatar*>(grid[i]);  
+                        
+                        for (int j = 0; j < grid.size(); j++){
+                            if (grid[j]->getEntity() == 'O'){
+                                Obstacle *obs = dynamic_cast<Obstacle*>(grid[j]); 
+                                int dis = Helper::calculateDistance(avatar->getCoordinates(), obs->getCoordinates());
+                                if (dis <= obstacleActivationDistance){
+                                    obs->apply(*grid[i]);
                                 }
                             }
                         }
