@@ -58,13 +58,15 @@ class GameSession{
                     if (grid[i]->getEntity() == 'O'){
                         Obstacle *obs = dynamic_cast<Obstacle*>(grid[i]);
 
-                        for (int j = 0; j < grid.size(); j++){
-                            if (grid[j]->getEntity() == 'A'){
-                                Avatar *avatar = dynamic_cast<Avatar*>(grid[j]);    
-                                int dis = Helper::calculateDistance(avatar->getCoordinates(), obs->getCoordinates());
+                        if (obs->isActive() == true) {
+                            for (int j = 0; j < grid.size(); j++){
+                                if (grid[j]->getEntity() == 'A'){
+                                    Avatar *avatar = dynamic_cast<Avatar*>(grid[j]);    
+                                    int dis = Helper::calculateDistance(avatar->getCoordinates(), obs->getCoordinates());
 
-                                if (dis < obstacleActivationDistance){
-                                    obs->apply(*avatar);
+                                    if (dis <= obstacleActivationDistance){
+                                        obs->apply(*avatar);
+                                    }
                                 }
                             }
                         }
