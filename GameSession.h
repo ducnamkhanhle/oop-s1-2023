@@ -18,7 +18,7 @@ class GameSession{
         int _gridWidth, _gridHeight;
         vector<GridUnit*> grid;
     public:
-        vector<GridUnit*> initGameSession(int numAvatars, int numObstacles, int gridWidth, int gridHeight){
+        void initGameSession(int numAvatars, int numObstacles, int gridWidth, int gridHeight){
             _gridWidth = gridWidth;
             _gridHeight = gridHeight;
             for (int i = 0; i < numAvatars; i++){

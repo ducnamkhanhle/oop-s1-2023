@@ -12,7 +12,7 @@ using namespace std;
 class Helper{
     public:
         static tu_int generateRandomCoordinates(int gridWidth, int gridHeight){
-            int rd_x = (rand() % (gridWidth + 1)), rd_y = (rand() % (gridHeight + 1));
+            int rd_x = (rand() % (gridWidth)), rd_y = (rand() % (gridHeight));
             tu_int tmp(rd_x, rd_y);
             return tmp;
         }
