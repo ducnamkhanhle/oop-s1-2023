@@ -30,7 +30,7 @@ class GameSession{
 
             for (int i = 0; i < numObstacles; i++){
                 tu_int pos = Helper::generateRandomCoordinates(gridWidth, gridHeight);
-                GridUnit *obs = new Avatar(get<0>(pos), get<1>(pos));
+                GridUnit *obs = new Obstacle(get<0>(pos), get<1>(pos));
 
                 grid.push_back(obs);
             }
