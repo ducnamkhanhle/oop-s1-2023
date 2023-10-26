@@ -60,11 +60,11 @@ class GameSession{
 
                         for (int j = 0; j < grid.size(); j++){
                             if (grid[j]->getEntity() == 'A'){
-                                Avatar *avatar = dynamic_cast<Avatar*>(grid[i]);    
+                                Avatar *avatar = dynamic_cast<Avatar*>(grid[j]);    
                                 int dis = Helper::calculateDistance(avatar->getCoordinates(), obs->getCoordinates());
 
                                 if (dis < obstacleActivationDistance){
-                                    obs->apply(*grid[j]);
+                                    obs->apply(*avatar);
                                 }
                             }
                         }
