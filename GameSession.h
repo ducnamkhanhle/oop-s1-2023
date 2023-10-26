@@ -63,7 +63,7 @@ class GameSession{
                                 Avatar *avatar = dynamic_cast<Avatar*>(grid[i]);    
                                 int dis = Helper::calculateDistance(avatar->getCoordinates(), obs->getCoordinates());
 
-                                if (dis <= obstacleActivationDistance){
+                                if (dis < obstacleActivationDistance){
                                     obs->apply(*grid[j]);
                                 }
                             }
