@@ -40,7 +40,8 @@ class GameSession{
         }
         void gameCycle(int maxCycles, double obstacleActivationDistance){
             int curr_cycle = 0, num_avatar = 0;
-            while (curr_cycle != maxCycles){
+
+            while (curr_cycle < maxCycles){
                 num_avatar = 0;
                 for (int i = 0; i < grid.size(); i++){
                     if (grid[i]->getEntity() == 'A'){
