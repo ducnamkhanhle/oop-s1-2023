@@ -14,8 +14,7 @@ class Avatar : public GridUnit{
         Avatar(int x, int y) : GridUnit(x, y, 'A') {}
 
         void shift(int dx, int dy){
-            get<0>(coordinates) += dx;
-            get<1>(coordinates) += dy;
+            coordinates = make_tuple(get<0>(coordinates) + dx, get<1>(coordinates) + dy);
         }
 
 };
