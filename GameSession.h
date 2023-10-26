@@ -39,41 +39,41 @@ class GameSession{
             return grid;
         }
         void gameCycle(int maxCycles, double obstacleActivationDistance){
-            int curr_cycle = 0, num_avatar = 0;
+            bool is_win = false;
 
-            while (curr_cycle < maxCycles){ 
-                for (int i = 0; i < grid.size(); i++){
-                    if (grid[i]->getEntity() == 'A'){
-                        Avatar *avatar = dynamic_cast<Avatar*>(grid[i]);
+            for (int i = 0; i < maxCycles; i++) { 
+                for (int k = 0; k < grid.size(); k++){
+                    if (grid[k]->getEntity() == 'A'){
+                        Avatar *avatar = dynamic_cast<Avatar*>(grid[k]);
                         avatar->shift(1, 0);
-                        tu_int pos = avatar->getCoordinates();
-                        if (get<0>(pos) > _gridWidth || get<1>(pos) > _gridHeight) {
-                            cout << "Avatar has won the game!" << endl;
-                            return;
-                        }
                     }
                 }
 
-                for(int i = 0; i < grid.size(); i++){
-                    if (grid[i]->getEntity() == 'A'){
-                        Avatar *avatar = dynamic_cast<Avatar*>(grid[i]);  
-                        
-                        for (int j = 0; j < grid.size(); j++){
-                            if (grid[j]->getEntity() == 'O'){
-                                Obstacle *obs = dynamic_cast<Obstacle*>(grid[j]); 
-                                double dis = Helper::calculateDistance(avatar->getCoordinates(), obs->getCoordinates());
-                                if (dis <= obstacleActivationDistance){
-                                    obs->apply(*grid[i]);
-                                    cout << 1 << endl;
-                                }
+                for(int k = 0; k < grid.size(); k++){
+                    for (int l = 0; l < grid.size(); l++){
+                        if (grid[k]->getEntity() == 'O' && grid[l]->getEntity() == 'A'){
+                            Avatar *avatar = dynamic_cast<Avatar*>(grid[l]);  
+                            Obstacle *obs = dynamic_cast<Obstacle*>(grid[k]); 
+                            double dis = Helper::calculateDistance(avatar->getCoordinates(), obs->getCoordinates());
+                            if (dis <= obstacleActivationDistance){
+                                obs->apply(*grid[l]);
                             }
                         }
                     }
                 }
-                curr_cycle++;
+                for (int j = 0; j < grid.size(); j++){
+                    if (grid[j]->getEntity() == 'A'){
+                        Avatar *avatar = dynamic_cast<Avatar*>(grid[j]);
+                        tu_int pos = avatar->getCoordinates();
+                        if (get<0>(pos) > _gridWidth) {
+                            cout << "Avatar has won the game!" << endl;
+                            is_win = true;
+                        }
+                    }
+                }
+                if (is_win == true) break;
             }
-
-            cout << "Maximum number of cycles reached. Game over." << endl;
+            if (is_win == false) cout << "Maximum number of cycles reached. Game over." << endl;
         }
 
 };
