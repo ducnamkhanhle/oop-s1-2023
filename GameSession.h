@@ -61,7 +61,7 @@ class GameSession{
                         for (int j = 0; j < grid.size(); j++){
                             if (grid[j]->getEntity() == 'O'){
                                 Obstacle *obs = dynamic_cast<Obstacle*>(grid[j]); 
-                                int dis = Helper::calculateDistance(avatar->getCoordinates(), obs->getCoordinates());
+                                double dis = Helper::calculateDistance(avatar->getCoordinates(), obs->getCoordinates());
                                 if (dis <= obstacleActivationDistance){
                                     obs->apply(*grid[i]);
                                 }
@@ -69,7 +69,6 @@ class GameSession{
                         }
                     }
                 }
-
                 curr_cycle++;
             }
 
