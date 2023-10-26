@@ -64,6 +64,7 @@ class GameSession{
                                 double dis = Helper::calculateDistance(avatar->getCoordinates(), obs->getCoordinates());
                                 if (dis <= obstacleActivationDistance){
                                     obs->apply(*grid[i]);
+                                    cout << 1 << endl;
                                 }
                             }
                         }

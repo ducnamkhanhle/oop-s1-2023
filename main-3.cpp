@@ -12,6 +12,7 @@ using namespace std;
 
 int main(){
     GameSession game;
-    game.initGameSession(10, 20, 50, 50);
-    game.gameCycle(20, 3);
+    game.initGameSession(3, 0, 25, 25);
+    game.gameCycle(2, 2);
+
 }
